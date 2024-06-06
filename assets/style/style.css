@@ -1,0 +1,778 @@
+@charset "UTF-8";
+
+/* ----------------------------
+  全体共通
+---------------------------- */
+html {
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  color: #000;
+}
+li {
+  list-style: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  background: none;
+}
+a:hover {
+  opacity: 0.6;
+}
+* {
+  box-sizing:border-box;
+}
+
+/* ----------------------------
+  共通オブジェクト
+---------------------------- */
+.u-block {
+  display: block;
+}
+.u-inner {
+  width: 75rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  border: #fff 0.01rem solid;
+}
+.p-link {
+  width: 62.5rem;
+  max-width: 100%;
+  height: 15.125rem;
+  margin: 0 auto;
+  padding: 48px 0;
+}
+.p-link__inner {
+  height: 9.125rem;
+  background-color: #F0F4FF;
+  padding: 2.5rem 2.9rem 2.5rem 2.9rem;
+}
+.p-link ul {
+  display: flex;
+}
+.p-link__ul--gap64 {
+  column-gap: 3rem;
+}
+.p-link__ul--gap32 {
+  column-gap: 2rem;
+}
+.p-link ul li {
+  padding: 0;
+  text-align: left;
+}
+.p-link ul li span:nth-of-type(1) {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #111;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+}
+.p-link ul li span:nth-of-type(2){
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  line-height: 2.5;
+
+}
+.p-link ul li button {
+  width: 18.75rem;
+  max-width: 100%;
+  height: 3.625rem;
+  border: none;
+  border-radius: 2.125rem;
+  color: #fff;
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.125rem;
+}
+.p-link__button--shop {
+  background: #46c4db;
+}
+.p-link__button--cart {
+  background: #5dd5ab;
+}
+.c-title__en__font {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.8125rem;
+  letter-spacing: 0.05em;
+  line-height: 0.71;
+}
+.c-title__jp__font {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+#main4 .u-mt24{
+  margin-top: 1.5rem;
+}
+
+/* ----------------------------
+  ヘッダー用
+---------------------------- */
+
+/* ----------------------------
+  メイン１用
+---------------------------- */
+.l-main1__image {
+
+  /* ★★後で確認 */
+  width: 100%;
+
+  height: 45rem;
+  background-image: url(../image/mainVisual.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.l-main1__title {
+  text-align: center;
+  padding: 2rem 0 0 5px;
+  margin: 0 auto;
+}
+.l-main1__title span{
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.75rem;
+  letter-spacing: 0.2em;
+  line-height: 1.25;
+  text-align: left;
+}
+.l-main1__text{
+  width: 22.75rem;
+  max-width: 100%;
+  text-align: left;
+  margin: -28.3125rem 0 0 4.4rem;
+  padding: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.l-main1__text__name{
+  width: 20rem;
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.125rem;
+  letter-spacing: 0.3em;
+  line-height: 1.36;
+}
+.l-main1__text__explain{
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5625rem;
+  letter-spacing: 0.3em;
+  line-height: 1.44;
+  margin-top: 0.625rem;
+}
+
+/* ----------------------------
+  メイン２用
+---------------------------- */
+.l-main2__image {
+  height: 34.375rem;
+  background-image: url(../image/greenBack.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+.l-main2__text{
+  width: 29.1875rem;
+  max-width: 100%;
+  height: 16.4375rem;
+  color: #fff;
+  text-align: left;
+  margin: -26.4375rem 3.375rem 0 auto;
+}
+.l-main2__text__en span{
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.375rem;
+  line-height: 1.2;
+}
+.l-main2__text__jp span{
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.3;
+}
+.l-main2__text__explain{
+  width: 26.8125rem;
+  max-width: 100%;
+  margin-top: 0.5rem;
+}
+.l-main2__text__explain span{
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 2.28;
+}
+
+/* ----------------------------
+  メイン３用
+---------------------------- */
+.l-main3__block {
+  height: 44.75rem;
+  padding: 5rem 0;
+}
+.l-main3__inner {
+  width: 72.25rem;
+  max-width: 100%;
+  height: 34.75rem;
+  margin: 0 auto;
+}
+.l-main3__title {
+  width: 7.9375rem;
+  height: 5.875rem;
+  text-align: center;
+  margin: 0px auto;
+}
+.l-main3__title__en {
+  margin-top: 0.5rem;
+}
+.l-main3__title__jp {
+  margin-top: 1.3rem;
+}
+.l-main3__slick{
+  width: 100%;
+  height: 24.25rem;
+  margin-top: 1.6rem;
+}
+.l-main3__slick__items {
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+}
+.slick-next {
+  top: 47%;
+  right: 25px;
+}
+.slick-prev {
+  top: 47%;
+  left: 0px;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #00afbf;
+  font-size: 3rem;
+}
+.slick-prev:before{
+  content: url(../image/arrow-left-circle-fill.png);
+}
+.slick-next:before{
+  content: url(../image/arrow-right-circle-fill.png);
+}
+.slick-dots li {
+  bottom: -1.25rem;
+  left: 0.3125rem;
+}
+.slick-dots li button:before {
+  color: #eee;
+  font-size: 0.5625rem;
+}
+.slick-dots li.slick-active button:before{
+  color: #00afbf;
+  font-size: 0.5625rem;
+}
+.l-main3__slick__items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.l-main3__slick__items--a, .l-main3__slick__items--b ,.l-main3__slick__items--c,
+.l-main3__slick__items--d, .l-main3__slick__items--e ,.l-main3__slick__items--f {
+  display: block;
+  width: 18.75rem;
+  height: 24.25rem;
+  text-align: center;
+  background-color: #dbf7f9;
+  padding: 2.5rem 1rem;
+}
+.l-main3__slick__items--a,
+.l-main3__slick__items--d {
+  margin: 0 0 0 auto;  
+}
+.l-main3__slick__items--b,
+.l-main3__slick__items--e {
+  margin: 0 auto;  
+}
+.l-main3__slick__items--c,
+.l-main3__slick__items--f {
+  margin: 0 auto 0 0;  
+}
+.l-main3__slick__items__img img{
+  width: 100px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.l-main3__slick__items__name {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  letter-spacing: 0.05em;
+  margin: 0.5rem 0 1rem 0;
+}
+.l-main3__slick__items__voice {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 1.75;
+  text-align: left;
+}
+
+/* ----------------------------
+  メイン４用
+---------------------------- */
+.l-main4__block {
+  background: linear-gradient(to right, #f4ffe8, #c6f0fe);
+  padding: 2.5rem 0;
+  margin-bottom: 0.5rem;
+}
+.l-main4__title {
+  width: 10rem;
+  height: 5.875rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.l-main4__title__en {
+  margin-top: 0.6rem;
+}
+.l-main4__title__jp {
+  margin-top: 1.2rem;
+}
+.l-main4__qa {
+  width: 37.5rem;
+  max-width: 100%;
+  margin: 1.8em auto 0 auto;
+}
+.l-main4__qa__accordion {
+  width: 100%;
+}
+.l-main4__qa__accordion--hidden {
+  display: none;
+}
+.l-main4__qa__accordion--open {
+  display: block;
+  padding: 1.35rem 1.5rem;
+  background: #fff;
+  margin: 0;
+  position: relative;
+}
+.l-main4__qa__accordion--open::after {
+	font-family: "Font Awesome 5 Free";
+	content: "\f0d7";
+	font-weight: 900;
+  font-size: 1.3rem;
+	position:absolute;
+	top: 50%;
+	right: 4%;
+	transform: translateY(-50%);
+}
+.l-main4__qa__accordion--hidden:checked+.l-main4__qa__accordion--open:after {
+  transform: translateY(-50%) rotateX(180deg);
+}
+.l-main4__qa__accordion--inner {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+}
+.l-main4__qa__accordion--hidden:checked+.l-main4__qa__accordion--open+.l-main4__qa__accordion--inner {
+  height: auto;
+  opacity: 1;
+  padding: 10px;
+}
+.l-main4__qa__accordion--qa .Q,
+.l-main4__qa__accordion--qa .A {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.125rem;
+  letter-spacing: 0em;
+  margin-right: 0.5rem;
+}
+.l-main4__qa__accordion--q {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.866;
+}
+.l-main4__qa__accordion--a {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.866;
+}
+.l-main4__qa__accordion--qa .l-main4__qa__accordion--open {
+  padding-left: 1.5em;
+}
+.l-main4__qa__accordion--qa .l-main4__qa__accordion--hidden:checked+.l-main4__qa__accordion--open+.l-main4__qa__accordion--inner {
+  height: auto;
+  opacity: 1;
+  background: #fff;
+  padding-left: 1.5rem;
+  padding-bottom: 1.0rem;
+  margin-top: -1.0rem;
+}
+
+/* ----------------------------
+  フッター用
+---------------------------- */
+.l-footer {
+  height: 9rem;
+  margin-top: -2.5rem;
+}
+.l-footer__arrow {
+  height: 2.5rem;
+}
+.l-footer__arrow__inner {
+  width: 75rem;
+  max-width: 80%;
+  height: 100%;
+  text-align: right;
+  margin: 0 auto;
+}
+.l-footer__arrow__inner button {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: #0071ce;
+}
+.l-footer__list {
+  background-color: #0071ce;
+}
+.l-footer__list__inner {
+  width: 75rem;
+  height: 100%;
+  margin: 0 auto;
+}
+.l-footer__list ul {
+  display: flex;
+  column-gap: 2.5rem;
+}
+.l-footer__list ul li{
+  width: calc(100%/3);
+}
+.l-footer__list__logo {
+  text-align: left;
+  padding: 1.75rem 0 1.75rem 2.0rem;
+}
+.l-footer__list__logo span{
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+  line-height: 1.25;
+  color: #fff;
+}
+.l-footer__list__menu {
+  text-align: center;
+  padding: 2.625rem 0;
+}
+.l-footer__list__menu span{
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  color: #fff;
+}
+.l-footer__list__menu span:nth-of-type(2){
+  margin: 0 2rem;
+}
+.l-footer__list__copyright {
+  text-align: right;
+  padding: 2.75rem 1.875rem 2.75rem 0;
+}
+.l-footer__list__copyright p{
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 1.41;
+  color: #fff;
+}
+
+
+/* =============================
+
+/* ----------------------------
+  sp用
+---------------------------- */
+
+@media screen and (max-width:767.98px) {
+
+  /* ----------------------------
+    全体共通
+  ---------------------------- */
+  
+  /* ----------------------------
+    共通オブジェクト
+  ---------------------------- */
+  .u-inner {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .p-link {
+    width: 100%;
+    height: 16.3125rem;
+    padding: 1.25rem 0;
+    margin-bottom: 3.125rem;
+  }
+  .p-link__inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .p-link ul {
+    flex-direction: column;
+  }
+  .p-link ul li {
+    height: auto;
+    padding: 0;
+    text-align: center;
+    padding: 0.2rem 0;
+  }
+  .p-link ul li span:nth-of-type(1) {
+    font-size: 1.125rem;
+  }
+  .p-link ul li span:nth-of-type(2) {
+    font-size: 0.875rem;
+    margin-top: 0.3125rem;
+  }
+  .p-link ul li button {
+    width: 18.75rem;
+    height: 3.625rem;
+    border-radius: 2.125rem;
+    font-size: 1.125rem;
+  }
+  .c-title__en__font {
+    font-size: 1.875rem;
+    letter-spacing: 0.03em;
+  }
+  .c-title__jp__font {
+    font-size: 1rem;
+    letter-spacing: 0em;
+  }
+  #main4 .u-mt24{
+    margin-top: 1.25rem;
+  }
+
+  /* ----------------------------
+    ヘッダー用
+  ---------------------------- */
+
+
+  /* ----------------------------
+    メイン１用
+  ---------------------------- */
+  .l-main1__image {
+    height: 28.125rem;
+    background-image: url(../image/mainVisual_sp.png);
+  }
+  .l-main1__title {
+    padding-top: 1.5125rem;
+  }
+  .l-main1__title span{
+    font-size: 1.5rem;
+  }
+  .l-main1__text{
+    height: 8.9375rem;
+    margin: -2.4rem 0 3.25rem 0.4375rem;
+  }
+  .l-main1__text__name{
+    width: 18rem;
+    line-height: 1.0;
+  }
+  .l-main1__text__explain{
+    font-size: 1.25rem;
+  }
+  .l-main1__text__name span{
+    font-size: 2.5625rem;
+    letter-spacing: 0.3em;
+  }
+
+  /* ----------------------------
+    メイン２用
+  ---------------------------- */
+  .l-main2__image {
+    height: 42.5rem;
+    background-image: url(../image/greenBack_sp.png);
+  }
+  .l-main2__text{
+    width: 22.375rem;
+    height: auto;
+
+    margin: -632px auto 0 auto;
+
+  }
+  .l-main2__text__en{
+    font-size: 1.875rem;
+    text-align: center;
+  }
+  .l-main2__text__jp{
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .l-main2__text__explain{
+    font-size: 0.875rem;
+  }
+
+  /* ----------------------------
+    メイン３用
+  ---------------------------- */
+  .l-main3__block {
+    height: 35.6875rem;
+    padding: 3.125rem 0;
+  }
+  .l-main3__inner {
+    width: 22.375rem;
+    height: 29.4375rem;
+  }
+  .l-main3__title {
+    width: 5.3125rem;
+    height: 4.125rem;
+  }
+  .l-main3__slick{
+    height: 21.5rem;
+  }
+  .l-main3__slick__items--a, .l-main3__slick__items--b ,.l-main3__slick__items--c,
+  .l-main3__slick__items--d, .l-main3__slick__items--e ,.l-main3__slick__items--f {
+    width: 17.5rem;
+    height: 21.5rem;
+  }
+
+
+  /* ----------------------------
+    メイン４用
+  ---------------------------- */
+  .l-main4__block {
+    height: 55.3125rem;
+    padding: 2rem 0;
+  }
+  .l-main4__title {
+    width: 7.3125rem;
+    height: 4.125rem;
+  }
+  .l-main4__qa {
+    width: 22.375rem;
+    height: 5.5625rem;
+    margin: 2.5625rem auto 0 auto;
+  }
+  /* .l-main4__qa__accordion--open {
+    padding: 1.5rem;
+  } */
+  /* .l-main4__qa__accordion--open::after {
+    top: 50%;
+    right: 5%;
+  } */
+  /* .l-main4__qa__accordion--hidden:checked+.l-main4__qa__accordion--open+.l-main4__qa__accordion--inner {
+    padding: 10px;
+  } */
+  /* .l-main4__qa__accordion--q {
+    font-size: 0.9375rem;
+  }
+  .l-main4__qa__accordion--a {
+    font-size: 0.9375rem;
+  }
+  .l-main4__qa__accordion--qa .Q::before,
+  .l-main4__qa__accordion--qa .A::before {
+    font-size: 1.125rem;
+    letter-spacing: 0.05em;
+  }
+  .l-main4__qa__accordion--qa .l-main4__qa__accordion--open {
+    padding-left: 2.5em;
+  }
+  .l-main4__qa__accordion--qa .l-main4__qa__accordion--hidden:checked+.l-main4__qa__accordion--open+.l-main4__qa__accordion--inner {
+    padding: 10px 10px 10px 2.5em;
+  } */
+  
+  /* ----------------------------
+    フッター用
+  ---------------------------- */
+  .l-footer {
+    height: 12.8125rem;
+  }
+  .l-footer__arrow__inner {
+    width: 22.375rem;
+  }
+  /* .l-footer__arrow__inner button {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  } */
+  .l-footer__list ul {
+    flex-direction: column;
+  }
+  .l-footer__list ul li{
+    width: 100%;
+    height: calc(10.1875rem/3);
+    padding: 0;
+  }
+  .l-footer__list__logo {
+    /* padding: 1.75rem 0 2.0625rem 0; */
+  }
+  .l-footer__list__logo span{
+    font-size: 1.75rem;
+  }
+  .l-footer__list__menu {
+    /* padding: 2.625rem 0; */
+  }
+  .l-footer__list__menu span{
+    font-size: 0.75rem;
+  }
+  .l-footer__list__menu span:nth-of-type(2){
+    margin: 0;
+  } 
+  .l-footer__list__copyright {
+    /* padding: 2.75rem 0 2.75rem 5.8125rem; */
+  }
+  .l-footer__list__copyright p{
+    font-size: 0.6875rem;
+  }
+  
+}
