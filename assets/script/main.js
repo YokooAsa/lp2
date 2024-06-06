@@ -6,7 +6,7 @@ $('.l-main3__slick__items').slick({
   dots: true,
   
   responsive: [{
-    breakpoint: 768, // ブレイクポイントを指定
+    breakpoint: 768,
     settings: {
       slidesToShow: 1,
       speed: 600,
