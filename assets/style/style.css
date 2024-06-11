@@ -67,7 +67,6 @@ a:hover {
 }
 .p-link ul li span:nth-of-type(1) {
   font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-size: 1.5rem;
@@ -77,36 +76,38 @@ a:hover {
 }
 .p-link ul li span:nth-of-type(2){
   font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
   letter-spacing: 0.1em;
   line-height: 2.5;
-
 }
-.p-link ul li button {
+.p-link ul li div {
   width: 18.75rem;
   max-width: 100%;
   height: 3.625rem;
   border: none;
   border-radius: 2.125rem;
-  color: #fff;
-  font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .p-link__button--shop {
   background: #46c4db;
+}
+.p-link__button--shop a,
+.p-link__button--cart a {
+  color: #fff;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.125rem;
 }
 .p-link__button--cart {
   background: #5dd5ab;
 }
 .c-title__en__font {
   font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-size: 2.8125rem;
@@ -115,7 +116,6 @@ a:hover {
 }
 .c-title__jp__font {
   font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   font-size: 1.25rem;
@@ -135,10 +135,7 @@ a:hover {
   メイン１用
 ---------------------------- */
 .l-main1__image {
-
-  /* ★★後で確認 */
   width: 100%;
-
   height: 45rem;
   background-image: url(../image/mainVisual.png);
   background-repeat: no-repeat;
@@ -179,7 +176,6 @@ a:hover {
 }
 .l-main1__text__explain{
   font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 1.5625rem;
@@ -208,7 +204,6 @@ a:hover {
 }
 .l-main2__text__en span{
   font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-size: 2.375rem;
@@ -216,7 +211,6 @@ a:hover {
 }
 .l-main2__text__jp span{
   font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 2.3;
@@ -226,9 +220,8 @@ a:hover {
   max-width: 100%;
   margin-top: 0.5rem;
 }
-.l-main2__text__explain span{
+.l-main2__text__explain p{
   font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 0.875rem;
@@ -263,7 +256,7 @@ a:hover {
 .l-main3__slick{
   width: 100%;
   height: 24.25rem;
-  margin-top: 1.6rem;
+  margin: 1.6rem auto 0 auto;
 }
 .l-main3__slick__items {
   width: 100%;
@@ -282,13 +275,18 @@ a:hover {
 .slick-prev:before,
 .slick-next:before {
   color: #00afbf;
-  font-size: 3rem;
+  content: '';
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-size: contain;
+  vertical-align: middle;
 }
-.slick-prev:before{
-  content: url(../image/arrow-left-circle-fill.png);
+.slick-prev:before {
+  background-image: url(../image/arrow-left-circle-fill.png);
 }
-.slick-next:before{
-  content: url(../image/arrow-right-circle-fill.png);
+.slick-next:before {
+  background-image: url(../image/arrow-right-circle-fill.png);
 }
 .slick-dots li {
   bottom: -1.25rem;
@@ -335,7 +333,6 @@ a:hover {
 }
 .l-main3__slick__items__name {
   font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 0.9375rem;
@@ -344,7 +341,6 @@ a:hover {
 }
 .l-main3__slick__items__voice {
   font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -419,7 +415,6 @@ a:hover {
 .l-main4__qa__accordion--qa .Q,
 .l-main4__qa__accordion--qa .A {
   font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 1.125rem;
@@ -428,7 +423,6 @@ a:hover {
 }
 .l-main4__qa__accordion--q {
   font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 0.9375rem;
@@ -436,7 +430,6 @@ a:hover {
 }
 .l-main4__qa__accordion--a {
   font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 0.9375rem;
@@ -484,6 +477,7 @@ a:hover {
 }
 .l-footer__list__inner {
   width: 75rem;
+  max-width: 100%;
   height: 100%;
   margin: 0 auto;
 }
@@ -513,7 +507,6 @@ a:hover {
 }
 .l-footer__list__menu span{
   font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 0.875rem;
@@ -528,7 +521,6 @@ a:hover {
 }
 .l-footer__list__copyright p{
   font-family: "Noto Serif JP", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 0.9rem;
@@ -540,8 +532,18 @@ a:hover {
 /* =============================
 
 /* ----------------------------
-  sp用
+  sp用・大画面用
 ---------------------------- */
+
+@media screen and (min-width:1999.98px) {
+
+  .l-main1__image {
+    height: 80rem;
+  }
+  .l-main2__image {
+    height: 40rem;
+  }
+}
 
 @media screen and (max-width:767.98px) {
 
@@ -573,9 +575,13 @@ a:hover {
   }
   .p-link ul li {
     height: auto;
-    padding: 0;
-    text-align: center;
     padding: 0.2rem 0;
+    text-align: center;
+  }
+  .p-link ul li:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .p-link ul li span:nth-of-type(1) {
     font-size: 1.125rem;
@@ -584,14 +590,16 @@ a:hover {
     font-size: 0.875rem;
     margin-top: 0.3125rem;
   }
-  .p-link ul li button {
+  .p-link ul li div {
     width: 18.75rem;
     height: 3.625rem;
-    border-radius: 2.125rem;
-    font-size: 1.125rem;
   }
   .p-link__button--shop {
     margin: 0 0 0.625rem 0;
+  }
+  .p-link__button--shop a,
+  .p-link__button--cart a {
+    font-size: 1.125rem;
   }
   .c-title__en__font {
     font-size: 1.875rem;
@@ -682,7 +690,6 @@ a:hover {
   .l-main3__title {
     height: 4.125rem;
   }
-
   .l-main3__title__jp {
     margin-top: 0.8rem;
   }
@@ -690,16 +697,21 @@ a:hover {
     height: 21.5rem;
   }
   .slick-next {
-    top: 45%;
-    right: 1.5625rem;
+    top: 49%;
+    right: 0.7rem;
   }
   .slick-prev {
-    top: 45%;
+    top: 49%;
     left: 0;
   }
   .slick-dots li {
     bottom: -0.5rem;
-    left: 0.3rem;
+    left: 2rem;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    width: 2rem;
+    height: 2rem;
   }
   .slick-dots li button:before {
     font-size: 0.7rem;
@@ -715,7 +727,7 @@ a:hover {
     width: 17.5rem;
     height: 21.5rem;
     margin: 0 auto;
-    padding: 1.75rem 1rem;
+    padding: 1.75rem 0.95rem;
   }
   .l-main3__slick__items__voice {
     font-size: 0.875rem;
@@ -756,7 +768,7 @@ a:hover {
     width: 22.5rem;
   }
   .l-footer__list__inner {
-    width: 22.5rem;
+    width: 22.5rem; 
     padding-top: 0.75rem;
   }
   .l-footer__list ul {
