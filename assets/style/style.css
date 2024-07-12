@@ -56,7 +56,9 @@ a:hover {
   display: flex;
 }
 .p-link__ul--gap64 {
+  justify-content: space-between;
   column-gap: 3rem;
+  padding: 0;
 }
 .p-link__ul--gap32 {
   column-gap: 2rem;
@@ -306,7 +308,7 @@ a:hover {
   object-fit: cover;
 }
 .l-main3__slick__items--a, .l-main3__slick__items--b ,.l-main3__slick__items--c,
-.l-main3__slick__items--d, .l-main3__slick__items--e ,.l-main3__slick__items--f {
+.l-main3__slick__items--d, .l-main3__slick__items--e ,.l-main3__slick__items--f ,.l-main3__slick__items--g {
   display: block;
   width: 18.75rem;
   height: 24.25rem;
@@ -315,7 +317,8 @@ a:hover {
   padding: 2.5rem 1rem;
 }
 .l-main3__slick__items--a,
-.l-main3__slick__items--d {
+.l-main3__slick__items--d,
+.l-main3__slick__items--g {
   margin: 0 0 0 auto;  
 }
 .l-main3__slick__items--b,
